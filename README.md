@@ -2,47 +2,86 @@
 This is Github repository for CMSE202 honors project
 
 
-## Project Title
-Analyzing the Impact of Advertising Spend on Sales Across Different Marketing Channels
+# Advertising Spend vs Sales Prediction (Machine Learning Project)
 
-## Research Question
-How does advertising spend across different marketing channels (TV, social media, online ads, etc.) affect sales, and which channel has the strongest impact?
+## Overview
+This project explores the relationship between advertising spend and sales using machine learning models. The goal is to understand how different advertising channels (TV, Radio, Newspaper) influence sales and to evaluate whether machine learning models can capture these relationships effectively.
 
-## Motivation
-Companies invest heavily in marketing, but not all advertising channels are equally effective. Understanding which channels drive the most sales can help businesses allocate their budgets more efficiently and maximize return on investment.
+This project is part of a course project and serves as a project update demonstrating data preprocessing, exploratory analysis, and model development.
 
-## Data Sources
-The project will use publicly available datasets such as:
+---
 
-- Advertising Dataset (Kaggle)
-  - Contains advertising budgets for TV, radio, and online platforms
-  - Includes corresponding sales data
+## Dataset
+The dataset used in this project contains advertising budgets across three channels:
+- TV
+- Radio
+- Newspaper
 
-Example dataset:
-https://www.kaggle.com/datasets/ashydv/advertising-dataset
+and the corresponding:
+- Sales
 
-## Methodology
-This project will apply computational modeling techniques from CMSE 202:
+The data is loaded from a CSV file (`advertising.csv`).
 
-- Data cleaning and preprocessing using pandas
-- Exploratory data analysis and visualization
-- Linear regression models to analyze relationships between:
-  - Advertising spend and sales
-  - Individual channel contributions to sales
+---
 
-- Compare effectiveness of different channels using model coefficients
+## Objectives
+The main goals of this project are:
+- Explore the relationship between advertising spend and sales
+- Perform data cleaning and preprocessing
+- Visualize patterns in the data
+- Build and evaluate machine learning models
+- Compare model performance
 
-## Expected Outcomes
-- Identify which advertising channels most strongly influence sales
-- Determine whether increased spending leads to proportional sales growth
-- Provide insights into optimal marketing budget allocation
+---
 
-## Tools and Libraries
-- Python
-- NumPy
-- Pandas
-- Matplotlib
+## Methods
 
-## Notes
-This project applies data modeling techniques to a real-world marketing problem and focuses on interpreting how different variables influence business outcomes.
+### 1. Data Preprocessing
+- Checked for missing values
+- Converted data types if necessary
+- Prepared features and target variables
 
+### 2. Exploratory Data Analysis (EDA)
+- Scatter plots to observe relationships
+- Correlation analysis between variables
+- Identification of trends across advertising channels
+
+### 3. Machine Learning Models
+The following models were implemented:
+- Linear Regression (baseline model)
+- Random Forest Regressor
+
+### 4. Model Evaluation
+Models were evaluated using:
+- Mean Squared Error (MSE)
+- R² Score
+
+---
+
+## Results
+- TV advertising shows the strongest relationship with sales
+- Radio has moderate impact
+- Newspaper has weak or minimal impact
+
+The Random Forest model generally performs better than Linear Regression in capturing nonlinear patterns.
+
+---
+
+## Files in this Repository
+
+- `Project Update.ipynb`  
+  Main notebook containing all code, analysis, and visualizations
+
+- `advertising.csv`  
+  Dataset used for this project
+
+- `README.md`  
+  Project description and documentation
+
+---
+
+## How to Run
+
+1. Clone the repository:
+```bash
+git clone <your-repo-link>
